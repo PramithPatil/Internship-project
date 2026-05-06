@@ -1,10 +1,10 @@
-# ☀️ Surya-Shakti Solar Monitor
+#  Surya-Shakti Solar Monitor
 
 A smart solar energy monitoring dashboard for Android, built with **Kotlin** and **Jetpack Compose**. Designed for households with rooftop solar panels to track power generation, electricity consumption, savings, and energy independence.
 
-## 📱 Features
+##  Features
 
-### 🏠 Dashboard
+###  Dashboard
 - Total Solar Energy Generated (kWh)
 - Total Energy Consumed (kWh)
 - Net Savings in ₹
@@ -12,37 +12,37 @@ A smart solar energy monitoring dashboard for Android, built with **Kotlin** and
 - Green Energy Independence Score (%)
 - **Circular Progress Indicator** — Solar vs Grid usage visualization
 
-### ☀️ Generation Log
+###  Generation Log
 - Select weather condition (Sunny / Cloudy / Rainy)
 - Auto-simulate generation based on weather
 - Manual generation value entry
 - Instant database logging
 
-### ⚡ Consumption Tracker
+###  Consumption Tracker
 - Enter previous & current meter readings
 - Auto-calculate daily consumption
 - Net energy usage breakdown
 - Export detection (when generation > consumption)
 
-### 💰 Savings Calculator
+###  Savings Calculator
 - Configurable per-unit electricity rate (default: ₹8/kWh)
 - Daily, monthly, and total savings tracking
 - Savings history table
 - Formula: `Savings = Solar Units × Per Unit Rate`
 
-### 📊 Reports
+###  Reports
 - Last 30 days energy history
 - Bar chart: Generation vs Consumption
 - Detailed log table with weather, savings, and exports
 - Summary statistics
 
-### 🔔 Smart Notifications
+###  Smart Notifications
 - "High Sun" alerts when generation is ideal for heavy appliances
 - Daily summary notifications
 
 ---
 
-## 🏗️ Architecture
+##  Architecture
 
 ```
 MVVM (Model-View-ViewModel)
@@ -58,7 +58,7 @@ MVVM (Model-View-ViewModel)
 └── utils/               # Simulation & Notification helpers
 ```
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 | Component        | Technology                      |
 |------------------|---------------------------------|
@@ -71,14 +71,14 @@ MVVM (Model-View-ViewModel)
 | Annotations      | KSP (for Room)                  |
 | Notifications    | Android NotificationManager     |
 
-## 🎨 Design
+##  Design
 
 - **Theme**: High-contrast **Yellow + Black** for outdoor sunlight readability
 - **Style**: Material Design 3 with rounded cards, smooth animations
 - **Typography**: Larger font sizes for outdoor visibility
 - **Icons**: Material Icons Rounded
 
-## 📋 Setup Instructions
+##  Setup Instructions
 
 ### Prerequisites
 - **Android Studio** Ladybug (2024.2.1) or newer
@@ -112,7 +112,7 @@ MVVM (Model-View-ViewModel)
 - **Build errors**: Try `File → Invalidate Caches → Restart`.
 - **KSP issues**: Make sure KSP version matches your Kotlin version in `libs.versions.toml`.
 
-## 📦 Dependencies
+##  Dependencies
 
 All managed via Gradle Version Catalog (`gradle/libs.versions.toml`):
 
@@ -123,11 +123,11 @@ All managed via Gradle Version Catalog (`gradle/libs.versions.toml`):
 - `androidx.compose.material:material-icons-extended` — Icon set
 - `com.google.devtools.ksp` — Annotation processing for Room
 
-## 🔋 Sample Data
+##  Sample Data
 
 On first launch, the app seeds **15 days** of sample data with realistic solar generation values based on varied weather conditions. This lets you immediately explore all features without manual data entry.
 
-## 📐 Key Formulas
+##  Key Formulas
 
 ```
 Net Usage = Consumption - Solar Generation
@@ -141,10 +141,5 @@ Independence Score = (Generation / Consumption) × 100%
 Battery Level = (Generation / 10 kWh capacity) × 100%
 ```
 
-## 📄 License
 
-This project is for educational and demonstration purposes.
 
----
-
-Built with ☀️ for promoting renewable energy awareness.
